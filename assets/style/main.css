@@ -1,0 +1,120 @@
+/* ************ Root Variabls********** */
+:root {
+    --main-font: 'Titillium Web', sans-serif;
+    --main-color: #17a2b8;
+}
+
+/* ********** Global ********* */
+
+body {
+    font-family: var(--main-font);
+    background-color: #24353F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: var(--main-color);
+}
+
+
+/* ********* Start ********* */
+
+form {
+    box-shadow: 0 0 58px -12px black;
+    width: 68%;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 7px 31px 7px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #CED4DA;
+    color: white;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+
+form label {
+    color: #CED4DA;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: top 0.3s;
+}
+
+/* form i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-color);
+    pointer-events: none;
+} */
+
+.input__i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-color);
+    pointer-events: none;
+}
+
+form [type='button'] {
+    color: var(--main-color);
+    border-color: var(--main-color);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+}
+
+form [type='button']:hover,
+form [type='button']:focus {
+    background-color: var(--main-color);
+    color: white;
+}
+
+form p a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+.incorrect {
+    color: #cf1010;
+    margin: 0;
+    text-align: center;
+    padding: 0px 31px 0px 15px;
+    font-size: 18px;
+    display: none;
+}
+
+/* Styling for autofill input fields */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    color-adjust: exact !important;
+}

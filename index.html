@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart-login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/image/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/all.min.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/media.css">
+
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="container">
+            <form class="p-5 mx-auto mt-5">
+                <h1>Smart Login System</h1>
+                <div>
+                    <div class="input__box position-relative">
+                        <input type="email" class="inputs" id="email" name="email">
+                        <label for="email">Your Email</label>
+                        <i class="fa-solid fa-envelope input__i"></i>
+                    </div>
+                    <div class=" input__box position-relative my-3 ">
+                        <input type="password" id="pass" class=" inputs" name="pass">
+                        <label for="pass">Your Password</label>
+                        <i class="fa-solid fa-lock input__i"></i>
+                    </div>
+                </div>
+                <p class="incorrect">incorrect email or password</p>
+                <input id="btnLogin" type="button" value="Login" class="loginBtn mt-4">
+                <p class="text-center text-light mt-3">Don’t have an account? <a href="signUp.html">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

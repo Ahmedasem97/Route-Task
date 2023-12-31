@@ -1,0 +1,35 @@
+
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+    .navbar__btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 480px) {
+    form label {
+        font-size: 14px;
+    }
+    form {
+        width: 90%;
+    }
+    .welcome__box span {
+        font-size: 23px;
+    }
+    .list__inner span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart-login</title>
+    <link rel="shortcut icon" href="assets/image/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/all.min.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/signUp.css">
+    <link rel="stylesheet" href="assets/style/media.css">
+</head>
+
+<body>
+    <div class="sign__up">
+        <div class="container">
+            <form class="p-5 mx-auto mt-5">
+                <h1>Smart Login System</h1>
+                <div>
+                    <div class=" input__box position-relative my-3 ">
+                        <div class="inner">
+                            <input type="text" id="name" class="inputs inputsName" name="pass">
+                            <label for="name">Your name</label>
+                            <i class="fa-solid fa-user input__i"></i>
+                        </div>
+                        <div class="valid__name validOne"><i class="fas fa-x me-1"></i> <span>please enter between 4 and 25 char and can used ( _ .) only</span></div>
+                    </div>
+                    <div class="input__box position-relative">
+                        <div class="inner">
+                            <input type="text" class="inputs inputsEmail" id="email" name="email">
+                            <label for="email">Your mail</label>
+                            <i class="fa-solid fa-envelope input__i"></i>
+                        </div>
+                        <div class="valid__name validTwo"><i class="fas fa-x me-1"></i> <span>Invalid. Please enter an like example@ex.com</span></div>
+                    </div>
+                    <div class=" input__box position-relative my-3 ">
+                        <div class="inner">
+                            <input type="password" id="pass" class="inputs inputsPass" name="pass">
+                            <label for="pass">Your password</label>
+                            <i class="fa-solid fa-lock input__i"></i>
+                        </div>
+                        <div class="valid__name validThree"><i class="fas fa-x me-1"></i> <span>Please enter the first capital letter, symbol and numbers</span></div>
+                    </div>
+                </div>
+                <p class="success">success</p>
+                <input  type="button" value="Sign Up" class="signUpBtn mt-4">
+                <p class="text-center text-light mt-3">You have an account? <a href="index.html">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/signUp.js"></script>
+</body>
+
+</html>

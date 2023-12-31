@@ -1,0 +1,36 @@
+form label {
+    color: #b1b7bd;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: top 0.3s;
+}
+
+.input__i {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: var(--main-color);
+    pointer-events: none;
+}
+
+.valid__name {
+    padding: 6px;
+    color: #cf1010;
+    display: none;
+}
+
+.valid__name i {
+    font-size: 14px;
+}
+
+.success {
+    color: #29cb29;
+    margin: 0;
+    text-align: center;
+    padding: 0px 31px 0px 15px;
+    font-size: 22px;
+    display: none;
+}
