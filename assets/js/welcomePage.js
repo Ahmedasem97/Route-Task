@@ -6,11 +6,11 @@ let userName = localStorage.getItem('userName')
 let exit = localStorage.getItem('exit')
 
 if (!userName) {
-    location.href = 'index.html'
+    location.replace('index.html')
 }
 navbarBtn?.addEventListener('click', function () {
     localStorage.removeItem("userName")
-    location.href = 'index.html'
+    location.replace('index.html')
 })
 let task = JSON.parse(localStorage.getItem('userName'))[0].email
 

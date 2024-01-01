@@ -7,7 +7,7 @@ let userLocal = JSON.parse(localStorage.getItem('userInfo'))
 
 
 if (JSON.parse(localStorage.getItem("userName")) != null) {
-    location.href = 'welcomePage.html'
+    location.replace('welcomePage.html')
 }
 
 
@@ -44,7 +44,7 @@ loginBtn?.addEventListener('click', function () {
                     email: userLocal[i].email
                 }]
                 localStorage.setItem('userName', JSON.stringify(userName))
-                location.href = 'welcomePage.html'
+                location.replace('welcomePage.html')
                 incorrect.style.display = 'none'
                 clearInputsLogin()
             }else {
