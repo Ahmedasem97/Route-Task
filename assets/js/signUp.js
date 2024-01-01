@@ -9,6 +9,11 @@ let validName = document.querySelector(".validOne")
 let validEmail = document.querySelector(".validTwo")
 let validPass = document.querySelector(".validThree")
 let resultSuccess = document.querySelector('.success')
+
+if (JSON.parse(localStorage.getItem("userName")) != null) {
+    location.replace('welcomePage.html')
+}
+
 let userInfoArray = []
 if (localStorage.getItem("userInfo") != null) {
     userInfoArray = JSON.parse(localStorage.getItem("userInfo"))
