@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 767px) {}
 
-@media screen and (max-width: 482px) {
+@media screen and (max-width: 486px) {
     form label {
         font-size: 14px;
     }
