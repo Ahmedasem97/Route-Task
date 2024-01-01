@@ -26,6 +26,9 @@
     .list__inner span {
         font-size: 15px;
     }
+    form p a {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 285px) {
