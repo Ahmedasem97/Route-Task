@@ -28,6 +28,7 @@ if (localStorage.getItem(task) != null) {
 addBtn.addEventListener('click', addTasks)
 
 function addTasks() {
+if (inputTask.value != '') {
     let taskName = {
         name: inputTask.value,
         check: false,
@@ -36,6 +37,7 @@ function addTasks() {
     showTasks()
     localStorage.setItem(task, JSON.stringify(tasksArray))
     clearButon()
+}
 }
 
 function showTasks() {
