@@ -24,7 +24,6 @@ async function fetchWeather() {
     weatherResponse = await weatherApi.json()
     displayWeather()
 }
-console.log(Math.round(Date.now() / Date.UTC(2024,5,16)));
 
 
 searchInput.addEventListener('keyup', function () {
@@ -40,7 +39,7 @@ for (const city of citiesList) {
 
 function displayWeather() {
     currentTemp.innerHTML = `${weatherResponse.current.temp_c}<sup>o</sup>c`
-    currentCity.innerHTML = weatherResponse.location.name
+    currentCity.innerHTML = weatherResponse.location.country
     currentTime.innerHTML = weatherResponse.forecast.forecastday[0].date
     currentImg.setAttribute('src', weatherResponse.current.condition.icon)
     currentCondition.innerHTML = weatherResponse.current.condition.text
