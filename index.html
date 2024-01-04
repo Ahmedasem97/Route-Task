@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>smart-login</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+    <title>SkyCast Pro</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <link rel="shortcut icon" href="assets/image/login.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/style/all.min.css">
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/main.css">
@@ -19,28 +18,84 @@
 
 <body>
 
-    <div class="login">
-        <div class="container">
-            <form class="p-5 mx-auto mt-5">
-                <h1>Smart Login System</h1>
-                <div>
-                    <div class="input__box position-relative">
-                        <input type="email" class="inputs" id="email" name="email">
-                        <label for="email">Your Email</label>
-                        <i class="fa-solid fa-envelope input__i"></i>
+<div class="weather__parent">
+    <div class="container-fluid ">
+        <div class="home row ">
+            <div class="weather__info col-md-8 h-100">
+                <h1 class="logo">SkyCast Pro</h1>
+                <div class="current__weather h-50 d-flex justify-content-center gap-3">
+                    <div class="current__temp text-center center">
+                        <span>16<sup>o</sup>c</span>
                     </div>
-                    <div class=" input__box position-relative my-3 ">
-                        <input type="password" id="pass" class=" inputs" name="pass">
-                        <label for="pass">Your Password</label>
-                        <i class="fa-solid fa-lock input__i"></i>
+                    <div class="city__time text-center center">
+                        <div class="city">
+                            <span >London</span>
+                        </div>
+                        <div class="time">
+                            <span >13.00-friday 9,10 2023</span>
+                        </div>
+                    </div>
+                    <div class="info__icon text-center center">
+                        <div class="icon">
+                            <img src="//cdn.weatherapi.com/weather/64x64/night/353.png" alt="">
+                        </div>
+                        <div class="info">
+                            <span>Partly coudy</span>
+                        </div>
                     </div>
                 </div>
-                <p class="incorrect">incorrect email or password</p>
-                <input id="btnLogin" type="button" value="Login" class="loginBtn mt-4">
-                <p class="text-center text-light mt-3">Don’t have an account? <a href="signUp.html">Sign Up</a></p>
-            </form>
+                <div class="two__days">
+                    <div class=" inner row">
+                        <div class="day col-6">
+                            <img src="//cdn.weatherapi.com/weather/64x64/night/353.png" alt="">
+                            <span class="temp">18<sup>o</sup>c</span>
+                            <span class="time">13.00-friday 9,10 2023</span>
+                            <span class="condition__text">Sunny</span>
+                        </div>
+                        <div class="day col-6">
+                            <img src="//cdn.weatherapi.com/weather/64x64/night/353.png" alt="">
+                            <span class="temp">18<sup>o</sup>c</span>
+                            <span class="time">13.00-friday 9,10 2023</span>
+                            <span class="condition__text">Sunny</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather__search col-md-4 ">
+                <div class="search__input position-relative">
+                    <input type="text"  placeholder="Search Location..." name="" id="">
+                </div>
+                <div class="city__example">
+                    <ul>
+                        <li>Egypt</li>
+                        <li>Tokyo</li>
+                        <li>California</li>
+                        <li>Paris</li>
+                    </ul>
+                </div>
+                <div class="weather__details mt-5">
+                    <h3>Weather Details</h3>
+                    <ul>
+                        <li>
+                            <p>Cloudy</p>
+                            <span>25%</span>
+                        </li>
+                        <li>
+                            <p>Humidity</p>
+                            <span>25%</span>
+                        </li>
+                        <li>
+                            <p>Wind</p>
+                            <span>25%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        
     </div>
+</div>
+
 
 
 
