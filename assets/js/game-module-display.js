@@ -91,9 +91,7 @@ export class DisplayGames {
                 // ******** D-none ***** 
                 $('.loadingScreen').fadeOut(500)
                 detailsSection.classList.remove('d-none')
-                gamesSections.classList.add("d-none")
-                // document.body.style.overflow = 'hidden'
-                
+                gamesSections.classList.add("d-none")                
             })
         }
     }
@@ -106,7 +104,6 @@ export class DisplayGames {
         detailsSection.classList.add('d-none')
         gamesSections.classList.remove("d-none")
         
-        // document.body.style.overflow = 'auto'
     })
 })()
 

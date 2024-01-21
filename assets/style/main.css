@@ -211,6 +211,7 @@ header img {
     height: 100vh;
     background-color: #272B30;
     z-index: 99999999;
+    overflow: auto;
 }
 
 .details__content img {
