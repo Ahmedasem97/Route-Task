@@ -1,108 +1,20 @@
+
+
 @media screen and (max-width: 1400px) {}
 
-@media screen and (max-width: 1200px) {
-    .weather__details ul li {
-        width: 100%;
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 576px) {
+    .navbar__header {
+        margin: 0 10px;
     }
 }
-
-@media screen and (max-width: 992px) {
-    .current__weather {
-        font-size: 13px;
-        margin-bottom: 28px;
-    }
-
-    .city__time {
-        padding: 0;
-    }
-
-    .two__days {
-        height: 32%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .weather__parent {
-        height: auto;
-    }
-
-    .home {
-        height: auto;
-    }
-
-    .city__example ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .two__days .inner {
-        padding: 0 84px 60px;
-    }
-
-    .current__weather {
-        margin: 60px 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .two__days .inner {
-        padding: 0 20px 60px;
-    }
-}
-
-@media screen and (max-width: 490px) {
-
-    .two__days .inner {
-        padding: 0;
-        margin-bottom: 30px;
-    }
-
-    .current__weather {
-        font-size: 8px;
-    }
-
-    .city__time {
-        padding: 0px;
-    }
-
-    .current__temp span {
-        font-size: 8em;
-    }
-}
-
-@media screen and (max-width: 405px) {
-    .city__example ul {
-        flex-wrap: wrap;
-    }
-
-    .current__weather .current__temp {
-        width: 100%;
-        font-size: 2em;
-    }
-
-    .current__temp span {
-        font-size: 6em;
-    }
-
-    .current__weather {
-        flex-wrap: wrap;
-    }
-
-    .city__example ul li {
-        width: 50%;
-        text-align: center;
-    }
-
-    .weather__details h3 {
-        font-size: 25px;
-    }
-
-    .city__time .city span {
-        font-size: 3.5em;
-    }
-
-    .info__icon .info span {
-        bottom: -10px;
-        font-size: 13px;
+@media screen and (max-width: 480px) {
+    .navbar__header .container {
+        padding: 10px 10px;
     }
 }

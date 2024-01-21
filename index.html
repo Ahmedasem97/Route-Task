@@ -4,105 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyCast Pro</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <title>Free Games</title>
 
     <link rel="stylesheet" href="assets/style/all.min.css">
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/main.css">
     <link rel="stylesheet" href="assets/style/media.css">
 
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/image/logo-sm.png" type="image/x-icon">
 </head>
 
 <body>
 
-<div class="weather__parent">
-    <div class="container-fluid ">
-        <div class="home row ">
-            <div class="weather__info col-md-8 h-100">
-                <h1 class="logo">SkyCast Pro</h1>
-                <div class="current__weather h-50 d-flex justify-content-center gap-3">
-                    <div class="current__temp text-center center">
-                        <span>16<sup>o</sup>c</span>
-                    </div>
-                    <div class="city__time text-center center">
-                        <div class="city">
-                            <span >London</span>
-                        </div>
-                        <div class="time">
-                            <span >13.00-friday 9,10 2023</span>
-                        </div>
-                    </div>
-                    <div class="info__icon text-center center">
-                        <div class="icon">
-                            <img src="//cdn.weatherapi.com/weather/64x64/night/353.png" alt="">
-                        </div>
-                        <div class="info">
-                            <span>Partly coudy</span>
-                        </div>
-                    </div>
+    <section class="loadingScreen">
+        <div class="spin position-relative">
+            <div class="fa-spin fa-spin-reverse spin__white position-absolute"></div>
+            <div class="fa-spin spin__red "></div>
+        </div>
+    </section>
+
+    <section class="games">
+
+        <header>
+            <img src="assets/image/wraper.png" alt="main img">
+        </header>
+
+        <nav class="navbar__header navbar navbar-expand-lg p-0">
+            <div class="container">
+                <div class="logo__header d-flex align-items-center gap-2">
+                    <img src="assets/image/logo-sm.png" alt="">
+                    <a class="logo navbar-brand" href="#">GAME REVIEWS</a>
                 </div>
-                <div class="two__days">
-                    <div class=" inner row">
-                        <div class="day col-6">
-                            <img src="//cdn.weatherapi.com/weather/64x64/night/353.png" alt="">
-                            <span class="temp">18<sup>o</sup>c</span>
-                            <span class="time">13.00-friday 9,10 2023</span>
-                            <span class="condition__text">Sunny</span>
-                        </div>
-                        <div class="day col-6">
-                            <img src="//cdn.weatherapi.com/weather/64x64/night/353.png" alt="">
-                            <span class="temp">18<sup>o</sup>c</span>
-                            <span class="time">13.00-friday 9,10 2023</span>
-                            <span class="condition__text">Sunny</span>
-                        </div>
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">MMORPG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SHOOTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SAILING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PERMADEATH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SUPERHERO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PIXEL</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="weather__search col-md-4 ">
-                <div class="search__input position-relative">
-                    <input type="text"  placeholder="Search Location..." name="" id="">
+        </nav>
+
+        <section class="games__card">
+            <div class="container">
+                <div class="row ">
                 </div>
-                <div class="city__example">
-                    <ul>
-                        <li>Egypt</li>
-                        <li>Tokyo</li>
-                        <li>California</li>
-                        <li>Paris</li>
-                    </ul>
-                </div>
-                <div class="weather__details mt-5">
-                    <h3>Weather Details</h3>
-                    <ul>
-                        <li>
-                            <p>Cloudy</p>
-                            <span>25%</span>
-                        </li>
-                        <li>
-                            <p>Humidity</p>
-                            <span>25%</span>
-                        </li>
-                        <li>
-                            <p>Wind</p>
-                            <span>25%</span>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="details p-4 d-none">
+        <div class="container">
+            <div class="head__title d-flex align-items-center justify-content-between">
+                <h2>Details Game</h2>
+                <i class="fas fa-xmark"></i>
+            </div>
+            <div class="details__content mt-5 row">
+
             </div>
         </div>
-        
-    </div>
-</div>
+    </section>
 
 
-
-
-
-
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/details-module-display.js"></script> -->
 </body>
 
 </html>

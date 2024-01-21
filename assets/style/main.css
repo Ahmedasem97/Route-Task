@@ -1,15 +1,15 @@
 /* ************ Root Variabls********** */
 :root {
-    --header-font: 'Montserrat', sans-serif;
-    --text-font: 'Poppins', sans-serif;
-    --main-color: #dbd4d4;
+    --header-font: 'Nerko One', cursive;
+    --text-font: 'Comfortaa', sans-serif;
+    --main-color: #3A497B;
 }
 
 /* ********** Global ********* */
 
 body {
     font-family: var(--text-font);
-    color: var(--main-color);
+    background-color: #272B30;
 }
 
 h1,
@@ -20,9 +20,6 @@ h5,
 h6,
 .logo {
     font-family: var(--header-font);
-    font-size: 30px;
-    margin: 10px 0 0 10px;
-    color: var(--main-color);
 }
 
 h1,
@@ -30,143 +27,228 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
     margin: 0;
 }
 
-
-/* ******** Start ************ */
-
-.logo {
-    padding: 20px 0 0 10px;
+/* ***** scroll bar ***** */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-.weather__parent {
-    width: 100%;
+/* Track */
+::-webkit-scrollbar-track {
+    background: #32383e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #262a2f;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+
+/* ************** loading screen ********** */
+body {
+    overflow: hidden;
+}
+
+.loadingScreen {
+    position: fixed;
+    top: 0;
     height: 100vh;
-    background-image: url(../image/43920623172_7443b1e368_b.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-.container-fluid {
-    background-color: rgba(0,0,0,0.45);
-    color: var(--main-color);
-}
-
-.home {
-    height: 100vh;
-}
-
-.weather__search {
-    padding: 25px;
-    background-color: rgba(110, 110, 110, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-}
-
-.search__input input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--main-color);
-    outline: none;
     width: 100%;
-    padding: 10px 0 5px 0px;
-    color: var(--main-color);
-}
-
-.search__input input::placeholder {
-    color: rgb(210, 201, 201);
-
-}
-
-.city__example ul,
-.weather__details ul {
-    list-style: none;
-    padding: 30px 0 0 0;
-    position: relative;
-}
-
-.city__example ul li {
-    padding: 20px 20px 20px 0;
-    cursor: pointer;
-    width: fit-content;
-}
-
-.city__example ul::before {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.45);
-    position: absolute;
-    bottom: -30px;
-}
-
-.weather__details ul li {
+    background-color: #272B30;
+    z-index: 999;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 65%;
-    padding: 20px 20px 20px 0;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    z-index: 9999999999999999999999;
 }
 
-.current__temp span {
-    /* font-size: 75px; */
-    font-size: 6em;
-    position: relative;
-    top: 13px;
+.spin__red {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-right: 5px solid #ff3d00;
 }
 
-.city__time {
-    padding: 0 30px;
-}
-.city__time .city span{
-    font-size: 2.5em;
+.spin__white {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 5px solid white;
 }
 
-.city__time .time span{
+/* ******** navbar ********* */
+header {
+    height: 30vh;
+}
+
+header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar__header {
+    transform: translateY(-50%);
+    position: sticky;
+    top: 34px;
+    z-index: 100;
+}
+
+.navbar__header .container {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 10px 50px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+.card-text {
+    color: #888A8D;
     font-size: 14px;
 }
 
-.info__icon .info span{
-    position: relative;
-    bottom: 0px;
-}
-.current__weather {
-    height: 45%;
-}
-.two__days {
-    height: 42%;
-}
-.two__days .inner{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo__header img {
+    width: 45px;
 }
 
-.day {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-}
-
-.day .temp {
+.logo {
     font-size: 25px;
+    font-weight: 500;
+    cursor: auto;
+}
+
+.logo,
+.navbar__header a {
+    color: white;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover,
+.nav-link:focus {
+    color: white;
+}
+
+.navbar-nav a {
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #09c;
+}
+
+.nav-link:hover {
+    color: #09c;
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    padding: 22px;
+    padding-bottom: 0;
+    transition: scale 0.5s;
+    margin-bottom: 25px;
+}
+
+.card img {
+    filter: grayscale();
+    transition: filter 0.5s;
+}
+
+.card:hover {
+    scale: 1.05;
+}
+
+.card:hover img {
+    filter: grayscale(0);
+}
+
+.card:hover .badge__free {
+    background-color: rgb(13, 110, 253);
 }
 
 
-.day .time {
-    font-size: 16px;
+.card-body {
+    padding: 20px 0;
+    height: 155px;
+}
+
+.badge__free {
+    background-color: #4A6792;
+    transition: background-color 0.5s;
+}
+
+.card-text:last-child {
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.card-footer span {
+    background-color: #32383E;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/* ************* Details page ********* */
+
+.details {
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #272B30;
+    z-index: 99999999;
+}
+
+.details__content img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.head__title i {
+    cursor: pointer;
+    font-size: 30px;
+    color: #828f8f;
+    transition: color 0.5s;
+}
+.head__title i:hover {
+    color: #c4cccc;
+}
+.details__content p {
+    margin: 0;
+}
+
+.details__content span {
+    background-color: #0DCAF0;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.details__content button {
+    color: white;
+    font-weight: 700;
+}
+
+.details__content button:hover {
+    color: white;
+}
+
+
+.card__game {
+    cursor: pointer;
 }
