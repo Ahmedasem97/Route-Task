@@ -4,7 +4,12 @@
 
 @media screen and (max-width: 1200px) {}
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .navbar__header {
+        transform: translateY(0);
+        top: 0;
+    }
+}
 
 @media screen and (max-width: 767px) {}
 
