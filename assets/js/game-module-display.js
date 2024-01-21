@@ -1,6 +1,7 @@
 
 const gamePage = document.querySelector(".games__card .row")
 const showDetalis = document.querySelector('.details__content')
+const gamesSections = document.querySelector(".games")
 const detailsSection = document.querySelector('.details')
 const closeIcon = document.querySelector('.fa-xmark')
 
@@ -90,8 +91,9 @@ export class DisplayGames {
                 // ******** D-none ***** 
                 $('.loadingScreen').fadeOut(500)
                 detailsSection.classList.remove('d-none')
-                document.body.style.overflow = 'hidden'
-
+                gamesSections.classList.add("d-none")
+                // document.body.style.overflow = 'hidden'
+                
             })
         }
     }
@@ -102,8 +104,9 @@ export class DisplayGames {
 (function closeDetails() {
     closeIcon.addEventListener('click', function () {
         detailsSection.classList.add('d-none')
+        gamesSections.classList.remove("d-none")
         
-        document.body.style.overflow = 'auto'
+        // document.body.style.overflow = 'auto'
     })
 })()
 
